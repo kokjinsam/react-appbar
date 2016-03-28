@@ -1,0 +1,29 @@
+{
+  "name": "react-appbar",
+  "version": "0.0.0",
+  "description": "react-appbar",
+  "main": "dist/react-appbar.min.js",
+  "homepage": "https://github.com/sammkj/react-appbar",
+  "authors": [
+    "Kok J Sam"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "ignore": [
+    ".editorconfig",
+    ".gitignore",
+    "package.json",
+    "src",
+    "node_modules",
+    "example",
+    "test"
+  ]
+}
