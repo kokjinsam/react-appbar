@@ -1,8 +1,8 @@
 {
   "name": "react-appbar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react-appbar",
-  "main": "lib/ReactAppbar.js",
+  "main": "lib/Appbar.js",
   "author": "Kok J Sam",
   "homepage": "https://github.com/sammkj/react-appbar",
   "repository": {
@@ -16,7 +16,6 @@
     "classnames": "^2.1.2",
     "jss": "^3.3.0",
     "jss-vendor-prefixer": "^1.0.1",
-    "object-assign": "^4.0.1",
     "raf": "^3.2.0",
     "react-jss": "^2.0.2"
   },

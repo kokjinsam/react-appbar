@@ -2,6 +2,8 @@
 
 An appbar based on [Sticky Header Auto-Reveal by MrPirrera](http://codepen.io/pirrera/pen/rayoLW).
 
+This is for my personal projects. It's not perfect. Please feel free to make pull request or fork it.
+
 ## Examples
 
 ![gif](./gifs/demo.gif)
@@ -28,8 +30,6 @@ npm install react-appbar --save
 
 
 ## Usage
-
-__EXPLAIN USAGE HERE__
 
 ```
 var Appbar = require('react-appbar');
