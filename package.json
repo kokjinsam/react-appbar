@@ -1,6 +1,6 @@
 {
   "name": "react-appbar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "react-appbar",
   "main": "lib/Appbar.js",
   "author": "Kok J Sam",
@@ -29,7 +29,7 @@
     "react-dom": "^0.14.0"
   },
   "peerDependencies": {
-    "react": "^0.14.0"
+    "react": "^0.14.3 || ^15.0.0"
   },
   "browserify-shim": {
     "react": "global:React"
