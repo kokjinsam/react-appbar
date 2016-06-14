@@ -1,49 +1,54 @@
-# React Appbar
+# React Appbar (v2.0.0)
 
 An appbar based on [Sticky Header Auto-Reveal by MrPirrera](http://codepen.io/pirrera/pen/rayoLW).
 
-This is for my personal projects. It's not perfect. Please feel free to make pull request or fork it.
-
 ## Examples
 
-![gif](./gifs/demo.gif)
-
-To build the examples locally, run:
-
-```
-npm install
-npm start
-```
-
-Then open [`localhost:8000`](http://localhost:8000) in a browser.
+![gif](./demo/demo.gif)
 
 
 ## Installation
-
-The easiest way to use react-appbar is to install it from NPM and include it in your own React build process (using [Browserify](http://browserify.org), [Webpack](http://webpack.github.io/), etc).
-
-You can also use the standalone build by including `dist/react-appbar.js` in your page. If you use this, make sure you have already included React, and it is available as a global variable.
 
 ```
 npm install react-appbar --save
 ```
 
+## Basic Usage
 
-## Usage
-
+This package comes with a pre-defined appbar. Alternatively, you can use `createAutoReveal()` to create your own appbar.
 ```
 var Appbar = require('react-appbar');
 
-<Appbar className="test">
+<Appbar>
 	This is an appbar
 </Appbar>
 ```
 
-## Development (`src`, `lib` and the build process)
+## Full APIs
 
-**NOTE:** The source code for the component is in `src`. A transpiled CommonJS version (generated with Babel) is available in `lib` for use with node.js, browserify and webpack. A UMD bundle is also built to `dist`, which can be included without the need for any build system.
+1. `createAutoReveal(Appbar)` - This function takes React component as its only argument. For example,
 
-To build, watch and serve the examples (which will also watch the component source), run `npm start`. If you just want to watch changes to `src` and rebuild `lib`, run `npm run watch` (this is useful if you are working with `npm link`).
+		```
+		import React from 'react';
+		import { createAutoReveal } from 'react-appbar';
+
+		const MyAppbar = ({
+			top,
+		}) => {
+			const appbarStyle = {
+				...yourStyle,
+				transform: `translateY(${top}px)`,   //--- this is important
+			}
+
+			return (
+				<div style={appbarStyle}>
+					<span>Appbar</span>
+				</div>
+			)
+		}
+
+		export default MyAppbar;
+		```
 
 ## License
 
